@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+::-webkit-scrollbar {
+    width: 0; /* For Chrome, Safari, and Opera */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: rgb(178,223,222);
+    background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
+    color: #ffffff;
+}
+
+.header{
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+    height: 50px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+
+    font-size: 35px;
+    padding: 60px 100px 40px 100px;
+    position: fixed;
+    z-index: 1;
+    background: transparent;
+    background: rgb(178,223,222);
+    background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
+}
+
+header :first-child {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar a:hover{
+    color: #9b6868;
+}
+#nav-home:hover{
+    color: #9b6868;
+}
+
+#nav-home, #name{
+    color: rgb(114, 33, 33);
+}
+
+
+
+main{
+position: sticky;
+margin-top: 120px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 20px;
+background: rgb(178,223,222);
+background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
+}
+
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+
+    padding: 80px 50px 0 50px;
+
+    margin-bottom: 0;
+    font-size: 30px;
+
+}
+
+.main-description{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.hi{
+    font-size: 110px;
+}
+.i-am{
+    font-size: 110px;
+}
+.frinze{
+    font-size: 130px;
+    color: rgb(0, 0, 0);
+}
+
+.main-description p{
+    max-width: 400px;
+    font-size: 20px;
+}
+
+#profile{
+width: 530px;
+height: 550px;
+
+}
+
+
+
+.about-phase-one{
+    width: 100%;
+    height: 1080px;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap:90px;
+    padding: 200px 10px;
+}
+
+
+.tech-stack{
+    display: flex;
+    gap: 50px;
+}
+
+.tech-stack > *{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bio{
+    max-width: 800px;
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+
+
+.about-phase-two{
+    width: 100%;
+    height: 960px;
+    background-color: rgb(255, 255, 255);
+    
+
+}
