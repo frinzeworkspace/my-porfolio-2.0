@@ -140,7 +140,7 @@ height: 550px;
     flex-direction: column;
 
     align-items: center;
-    gap:90px;
+    gap:100px;
     padding: 200px 10px;
 }
 
@@ -160,16 +160,136 @@ height: 550px;
 
 .bio{
     max-width: 800px;
-    font-size: 40px;
-    padding-left: 50px;
+    font-size: 38px;
+    padding-left: 90px;
 }
+
+
+
+
+
 
 
 
 .about-phase-two{
+    padding-top: 30px;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 960px;
     background-color: rgb(255, 255, 255);
+}
+
+.project1 {
+    display: flex;
+    padding: 30px;
+    gap: 100px;
+    margin-right: 350px;
+}
+
+@media screen and (max-width: 1600px) {
+    .project1 {
+        margin-right: 50px;
+        padding-right: 30px;
+    }
+}
+
+
+
+
+.project1-preview{
+    width: 720px;
+    height: 400px;
+    background-color: rgb(140, 209, 187);
+    border: 2px solid black;
     
 
 }
+#fitnesschamp{
+    transition: 0.4 ease-in-out;
+}
+#fitnesschamp:hover{
+    border:5px rgb(73, 56, 56) solid;
+    border-radius: 5px;
+}
+
+.project1-description{
+    width: 200px;
+    height: 400px;
+    color: rgb(20, 1, 1);
+}
+
+.project1-description h1{
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+.project1-description p{
+    margin-left: 10px;
+}
+
+.project1-tech-stack {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.project1-tech-stack > img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+.contacts{
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+.form{
+    width: 600px;
+    height: 600px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.form > #fullName, #email{
+    width: 400px;
+    height: 35px;
+}
+
+.contacts-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+
+.digital-space{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.digital-space a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #0f0d0d;
+}
+
