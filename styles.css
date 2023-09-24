@@ -6,7 +6,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0; /* For Chrome, Safari, and Opera */
+    width: 0;
 }
 
 html{
@@ -171,7 +171,7 @@ height: 550px;
 
 
 
-.about-phase-two{
+.projects{
     padding-top: 30px;
     height: 900px;
     display: flex;
@@ -282,14 +282,25 @@ height: 550px;
     gap:10px;
 }
 .digital-space a{
-
-    text-decoration: none;
-    color: white;
+    font-size: 16px;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
 }
 
 .footer{
     width: 100%;
     height: 80px;
     background-color: #0f0d0d;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    font-size: 14px;
+    color: antiquewhite;
+}
+
+.footer > *{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 20px;
 }
 
