@@ -183,6 +183,19 @@ height: 550px;
     color: #9b6868;
 }
 
+.cert-icons{
+    width: 35px;
+    height: 35px;
+}
+
+.certifications-credentials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+    padding-bottom: 20px;
+}
+
 
 /* ##############################################-PROJECTS-############################################# */
 #projects{
