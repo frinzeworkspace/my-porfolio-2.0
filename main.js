@@ -60,7 +60,7 @@ function updateNavbarStyles() {
         navbarName.style.color = 'white';
         navbarName.style.color = 'black';
         navbar.style.background = 'white'; 
-        navbarProjects.style.color= 'rgb(114, 33, 33)';
+        navbarAbout.style.color= 'rgb(114, 33, 33)';
     } else {
         navbar.style.background = 'linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%)';
     }
