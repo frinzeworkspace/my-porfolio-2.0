@@ -21,10 +21,9 @@ body{
     color: #ffffff;
     overflow-x: hidden;
 }
-
 /* ##############################################-HOME-############################################# */
 .header{
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
     width: 100%;
     height: 50px;
     display: flex;
@@ -40,14 +39,11 @@ body{
     background: rgb(178,223,222);
     background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
 }
-
 header :first-child {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
-
-
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -55,13 +51,11 @@ header :first-child {
     gap: 30px;
     padding: 10px;
 }
-
 .navbar a{
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
 }
-
 .navbar a:hover{
     color: #9b6868;
 }
@@ -72,9 +66,6 @@ header :first-child {
 #nav-home, #dev-name{
     color: rgb(114, 33, 33);
 }
-
-
-
 main{
 position: sticky;
 margin-top: 120px;
@@ -85,8 +76,6 @@ padding-top: 20px;
 background: rgb(178,223,222);
 background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
 }
-
-
 .home{
     display: flex;
     flex-direction: row;
@@ -98,16 +87,13 @@ background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%
 
     margin-bottom: 0;
     font-size: 30px;
-
 }
-
 .main-description{
     display: flex;
     flex-direction: column;
     padding: 20px;
     padding-bottom: 60px;
 }
-
 .hi{
     font-size: 110px;
 }
@@ -118,38 +104,33 @@ background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%
     font-size: 130px;
     color: rgb(0, 0, 0);
 }
-
 .main-description p{
     max-width: 400px;
     font-size: 20px;
 }
-
 #profile{
 width: 530px;
 height: 550px;
 
 }
 
-
 /* ##############################################-ABOUT-############################################# */
 .about-phase-one{
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 1000px;
-    background-color: rgb(0, 0, 0);
+    padding: 190px 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:100px;
-    padding: 190px 10px;
 }
-
-
 .tech-stack{
     display: flex;
     gap: 50px;
 }
-
 .tech-stack > *{
     width: 100px;
     height: 100px;
@@ -157,32 +138,26 @@ height: 550px;
     align-items: center;
 
 }
-
 .bio{
     max-width: 900px;
     font-size: 25px;
     padding-left: 90px;
 }
-
-
-
-
 .about-phase-two{
-    height: 1080px;
     background-color: #ffffff;
+    height: 1080px;
+    padding: 190px 10px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #0f0d0d;
-    padding: 100px;
 }
-
 .about-phase-two > h1{
     font-size: 60px;
     color: #9b6868;
 }
-
 .frinze-about{
     margin-top: 50px;
     display: flex;
@@ -191,27 +166,22 @@ height: 550px;
     align-items: start;
     gap:20px
 }
-
-
 #frinze-about-pic{
     width: 500px;
     height: 500px;
 }
-
 .frinze-description{
     max-width: 500px;
     color: #9b6868;
 }
-
 .frinze-description > h1{
     color: #9b6868;
 }
 
-
-
-
-
-
+.certifications a{
+    font-style: none;
+    color: #9b6868;
+}
 
 
 /* ##############################################-PROJECTS-############################################# */
@@ -220,15 +190,17 @@ height: 550px;
     background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
 }
 .projects{
-    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    height: 1080px;
+    padding: 190px 10px;
+    padding-top: 0px;
+
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
-    gap: 200px;
-    width: 100%;
-    height: 960px;
-    background-color: rgb(255, 255, 255);
+    gap: 280px;
+
 }
 
 .my-project-wrapper{
@@ -245,7 +217,6 @@ height: 550px;
     animation: scroll 12s infinite linear;
     background-color: #0f0d0d;
     width: 100%;
-
 }
 
 .my-project-wrapper ul li{
@@ -274,32 +245,14 @@ height: 550px;
     }
 }
 
-
-
-
-
-
-
-
-
-#projects-header-title{
-    display: none;
-    font-size: 30px;
-}
-
 .project1 {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 30px;
     gap: 60px;
 }
-
-
-
-
 .project1-preview{
     width: 720px;
     height: 400px;
@@ -313,8 +266,6 @@ height: 550px;
     transition: 0.4 ease-in-out;
     box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 25);
 }
-
-
 .project1-description{
     max-width: 100%;
     height: 400px;
@@ -326,16 +277,13 @@ height: 550px;
 
     color: rgb(255, 255, 255);
 }
-
 .project1-description h1{
     font-size: 100px;
     margin-bottom: 30px;
 }
-
 .project1-description p{
     margin-left: 10px;
 }
-
 .project1-tech-stack {
     margin-top: 40px;
     margin-left: 20px;
@@ -344,19 +292,19 @@ height: 550px;
     width: 20px;
     height: 20px;
 }
-
 #fitnesschamp:hover{
     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 25);
     border-radius: 5px;
     transition: 0.5 ease-in-out;
 }
-
 @media screen and (max-width: 1600px) {
     .project1 {
         margin-right: 50px;
         padding-right: 30px;
     }
 }
+
+
 
 
 
@@ -370,8 +318,6 @@ height: 550px;
     align-items: center;
     gap:50px;
 }
-
-
 .form{
     width: 600px;
     height: 600px;
@@ -383,15 +329,11 @@ height: 550px;
     gap:10px;
     border: 1px solid;
     padding: 10px;
-    /* box-shadow: 0.01px 0.1px 30px #5c5b5b; */
 }
-
-
 .form > #fullName, #email{
     width: 400px;
     height: 35px;
 }
-
 .contacts-description{
     display: flex;
     flex-direction: column;
@@ -400,7 +342,6 @@ height: 550px;
     color: rgb(164, 207, 207);
     
 }
-
 .digital-space{
     display: flex;
     flex-direction: column;
@@ -412,7 +353,6 @@ height: 550px;
     text-decoration:none;
     color: rgb(255, 255, 255);
 }
-
 input[type="text"]::placeholder {
     text-align: center;
 }
@@ -420,7 +360,6 @@ input[type="text"]::placeholder {
 input[type="email"]::placeholder {
     text-align: center;
 }
-
 #submit{
     border-style: none;
     border-radius: 2px;
@@ -432,8 +371,6 @@ input[type="email"]::placeholder {
 #submit:hover{
     cursor: pointer;
 }
-
-
 .center-placeholder::placeholder {
     text-align: center;
 }
@@ -444,7 +381,6 @@ input[type="email"]::placeholder {
     padding: 10px;
     resize: none; /* Disable textarea resizing */
 }
-
 
 /* ##############################################-FOOTER-############################################# */
 .footer{
@@ -457,10 +393,8 @@ input[type="email"]::placeholder {
     font-size: 14px;
     color: antiquewhite;
 }
-
 .footer > *{
     margin-left: 20px;
     margin-bottom: 5px;
     margin-right: 20px;
 }
-
