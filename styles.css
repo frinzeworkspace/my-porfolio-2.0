@@ -19,14 +19,14 @@ body{
     background: rgb(178,223,222);
     background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
     color: #ffffff;
+    overflow-x: hidden;
 }
 
+/* ##############################################-HOME-############################################# */
 .header{
-    transition: background 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
     width: 100%;
     height: 50px;
-
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,7 +69,7 @@ header :first-child {
     color: #9b6868;
 }
 
-#nav-home, #name{
+#nav-home, #dev-name{
     color: rgb(114, 33, 33);
 }
 
@@ -131,17 +131,17 @@ height: 550px;
 }
 
 
-
+/* ##############################################-ABOUT-############################################# */
 .about-phase-one{
     width: 100%;
-    height: 1080px;
-    background-color: rgb(2, 2, 2);
+    height: 1000px;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     align-items: center;
     gap:100px;
-    padding: 200px 10px;
+    padding: 190px 10px;
 }
 
 
@@ -159,42 +159,142 @@ height: 550px;
 }
 
 .bio{
-    max-width: 800px;
-    font-size: 38px;
+    max-width: 900px;
+    font-size: 25px;
     padding-left: 90px;
 }
 
 
 
 
+.about-phase-two{
+    height: 1080px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0f0d0d;
+    padding: 100px;
+}
 
+.about-phase-two > h1{
+    font-size: 60px;
+    color: #9b6868;
+}
 
-
-
-.projects{
-    padding-top: 30px;
-    height: 900px;
+.frinze-about{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: start;
+    gap:20px
+}
+
+
+#frinze-about-pic{
+    width: 500px;
+    height: 500px;
+}
+
+.frinze-description{
+    max-width: 500px;
+    color: #9b6868;
+}
+
+.frinze-description > h1{
+    color: #9b6868;
+}
+
+
+
+
+
+
+
+
+/* ##############################################-PROJECTS-############################################# */
+#projects{
+    background: rgb(178,223,222);
+    background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
+}
+.projects{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
     align-items: center;
+    gap: 200px;
     width: 100%;
     height: 960px;
     background-color: rgb(255, 255, 255);
 }
 
-.project1 {
+.my-project-wrapper{
+    background-color: #0f0d0d;
+    position: relative;
+    width: 100%;
+
+
+}
+.my-project-wrapper ul{
     display: flex;
-    padding: 30px;
-    gap: 100px;
-    margin-right: 350px;
+    list-style: none;
+    transform: translateX(-1000px);
+    animation: scroll 12s infinite linear;
+    background-color: #0f0d0d;
+    width: 100%;
+
 }
 
-@media screen and (max-width: 1600px) {
-    .project1 {
-        margin-right: 50px;
-        padding-right: 30px;
+.my-project-wrapper ul li{
+    white-space: nowrap;
+    padding: 0px 25px;
+    font-size: 40px;
+}
+
+.my-project-wrapper ul li::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+}
+
+.my-project-wrapper ul li:last-child::after{
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
     }
+
+    to{
+        transform: translateX(-1800px);
+    }
+}
+
+
+
+
+
+
+
+
+
+#projects-header-title{
+    display: none;
+    font-size: 30px;
+}
+
+.project1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 60px;
 }
 
 
@@ -205,21 +305,26 @@ height: 550px;
     height: 400px;
     background-color: rgb(140, 209, 187);
     border: 2px solid black;
-    
-
+    margin: 0px;
+    padding: 0px;
 }
+
 #fitnesschamp{
     transition: 0.4 ease-in-out;
-}
-#fitnesschamp:hover{
-    border:5px rgb(73, 56, 56) solid;
-    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 25);
 }
 
+
 .project1-description{
-    width: 200px;
+    max-width: 100%;
     height: 400px;
-    color: rgb(20, 1, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    max-width: 12200px;
+
+    color: rgb(255, 255, 255);
 }
 
 .project1-description h1{
@@ -240,11 +345,24 @@ height: 550px;
     height: 20px;
 }
 
+#fitnesschamp:hover{
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 25);
+    border-radius: 5px;
+    transition: 0.5 ease-in-out;
+}
+
+@media screen and (max-width: 1600px) {
+    .project1 {
+        margin-right: 50px;
+        padding-right: 30px;
+    }
+}
 
 
 
-
+/* ##############################################-CONTACTS-############################################# */
 .contacts{
+    background-color: #0f0d0d;
     height: 900px;
     display: flex;
     flex-direction: row;
@@ -252,6 +370,7 @@ height: 550px;
     align-items: center;
     gap:50px;
 }
+
 
 .form{
     width: 600px;
@@ -262,7 +381,11 @@ height: 550px;
     justify-content: center;
     align-items: center;
     gap:10px;
+    border: 1px solid;
+    padding: 10px;
+    /* box-shadow: 0.01px 0.1px 30px #5c5b5b; */
 }
+
 
 .form > #fullName, #email{
     width: 400px;
@@ -274,12 +397,15 @@ height: 550px;
     flex-direction: column;
     align-items: center;
     font-size: 50px;
+    color: rgb(164, 207, 207);
+    
 }
 
 .digital-space{
     display: flex;
     flex-direction: column;
     gap:10px;
+    color: rgb(164, 207, 207);
 }
 .digital-space a{
     font-size: 16px;
@@ -287,6 +413,40 @@ height: 550px;
     color: rgb(255, 255, 255);
 }
 
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+input[type="email"]::placeholder {
+    text-align: center;
+}
+
+#submit{
+    border-style: none;
+    border-radius: 2px;
+    padding: 12px;
+    color: #ffffff;
+    background: rgb(178,223,222);
+    background: linear-gradient(-90deg, rgba(178,223,222,1) 1%,rgba(56,120,89,1) 51%, rgb(120, 66, 56) 99% );
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+
+.center-placeholder::placeholder {
+    text-align: center;
+}
+
+.message-box {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    resize: none; /* Disable textarea resizing */
+}
+
+
+/* ##############################################-FOOTER-############################################# */
 .footer{
     width: 100%;
     height: 80px;
