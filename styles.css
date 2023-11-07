@@ -215,7 +215,8 @@ height: 550px;
 .projects{
     background-color: rgb(255, 255, 255);
     height: 900px;
-    padding-bottom: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 
     display: flex;
     flex-direction: column;
@@ -225,7 +226,7 @@ height: 550px;
 }
 
 .my-project-wrapper{
-    background-color: #0f0d0d;
+    background-color: #000000;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -236,7 +237,7 @@ height: 550px;
     list-style: none;
     animation: scroll 10.5s infinite linear;
     
-    background-color: #0f0d0d;
+    background-color: #000000;
     width: 100%;
     white-space: nowrap;
 }
@@ -244,6 +245,7 @@ height: 550px;
 .my-project-wrapper ul li{
     padding: 0px 25px;
     font-size: 40px;
+    color: rgb(255, 255, 255);
 }
 
 .my-project-wrapper ul li::after{
