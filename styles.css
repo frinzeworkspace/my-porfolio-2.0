@@ -234,7 +234,7 @@ height: 550px;
 .my-project-wrapper ul{
     display: flex;
     list-style: none;
-    animation: scroll 8s infinite linear;
+    animation: scroll 10.5s infinite linear;
     
     background-color: #0f0d0d;
     width: 100%;
