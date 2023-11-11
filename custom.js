@@ -6,7 +6,7 @@ particlesJS("bg-particles", {
         "value": 150,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1500
         }
       },
       "color": {
@@ -23,12 +23,12 @@ particlesJS("bg-particles", {
         },
         "image": {
           "src": "img/github.svg",
-          "width": 100,
-          "height": 100
+          "width": 500,
+          "height": 500
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.4,
         "random": false,
         "anim": {
           "enable": false,
@@ -38,7 +38,7 @@ particlesJS("bg-particles", {
         }
       },
       "size": {
-        "value": 3,
+        "value": 4,
         "random": true,
         "anim": {
           "enable": false,
@@ -56,7 +56,7 @@ particlesJS("bg-particles", {
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 2,
         "direction": "none",
         "random": false,
         "straight": false,

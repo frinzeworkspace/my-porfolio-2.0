@@ -24,8 +24,9 @@ body{
 /* ##############################################-HOME-############################################# */
 .header{
     transition: 0.3s ease-in-out;
-    width: 100%;
-    height: 50px;
+
+    width: 100vw;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,16 +35,15 @@ body{
     font-size: 35px;
     padding: 60px 100px 40px 100px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background: transparent;
-    background: rgb(178,223,222);
-    background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
 }
 header :first-child {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -66,9 +66,8 @@ header :first-child {
 #nav-home, #dev-name{
     color: rgb(114, 33, 33);
 }
+
 main{
-position: sticky;
-margin-top: 100px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -76,30 +75,40 @@ padding-top: 20px;
 background: rgb(178,223,222);
 background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%, rgba(68,19,23,1) 99%);
 }
+
 .home{
-    
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center ;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
-
-    padding: 80px 50px 0 50px;
-
+    padding: 0;
     margin-bottom: 0;
     font-size: 30px;
 }
+
+#bg-particles{
+    position: absolute;
+    height: 123vh;
+    width: 123vw;
+    z-index: 0;
+}
+
 .main-description{
     display: flex;
     flex-direction: column;
     padding: 20px;
     padding-bottom: 60px;
+    z-index: 1;
 }
 .hi{
     font-size: 110px;
 }
 .i-am{
     font-size: 110px;
+
 }
 .frinze{
     font-size: 130px;
@@ -109,26 +118,26 @@ background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%
     max-width: 400px;
     font-size: 20px;
 }
-#profile{
-width: 530px;
-height: 550px;
 
+#profile{
+    width: min(600px, 300px);
+    height: 70vh;
+    z-index: 1;
 }
 
 /* ##############################################-ABOUT-############################################# */
 
 .about-phase-one{
     background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 900px;
-    padding: 190px 10px;
-
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:100px;
 }
+
 .tech-stack{
     display: flex;
     gap: 50px;
@@ -144,11 +153,15 @@ height: 550px;
     max-width: 900px;
     font-size: 25px;
     padding-left: 90px;
-
 }
+
+
+
+
 .about-phase-two{
     background-color: #ffffff;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
     padding: 190px 10px;
 
     display: flex;
@@ -157,10 +170,12 @@ height: 550px;
     justify-content: center;
     color: #0f0d0d;
 }
+
 .about-phase-two > h1{
     font-size: 60px;
     color: #9b6868;
 }
+
 .frinze-about{
     margin-top: 50px;
     display: flex;
