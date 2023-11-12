@@ -6,7 +6,7 @@ particlesJS("bg-particles", {
         "value": 150,
         "density": {
           "enable": true,
-          "value_area": 1500
+          "value_area": 1900
         }
       },
       "color": {
@@ -38,7 +38,7 @@ particlesJS("bg-particles", {
         }
       },
       "size": {
-        "value": 4,
+        "value": 5,
         "random": true,
         "anim": {
           "enable": false,
