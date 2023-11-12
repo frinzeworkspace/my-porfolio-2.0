@@ -104,14 +104,14 @@ background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%
     z-index: 1;
 }
 .hi{
-    font-size: 110px;
+    font-size: 20vh;
 }
 .i-am{
-    font-size: 110px;
+    font-size: 13vh;
 
 }
 .frinze{
-    font-size: 130px;
+    font-size: 13vh;
     color: rgb(0, 0, 0);
 }
 .main-description p{
@@ -120,7 +120,7 @@ background: linear-gradient(90deg, rgba(178,223,222,1) 1%, rgba(56,120,89,1) 51%
 }
 
 #profile{
-    width: 600px;
+    width: 65vh;
     height: 70vh;
     z-index: 1;
 }
